@@ -1,5 +1,6 @@
 import React from 'react'
 import '../login/login.css'
+import { Link } from 'react-router-dom'
 export default function signin() {
   return (
     <div class="container">
@@ -36,9 +37,10 @@ export default function signin() {
            		    	<input type="password" class="input"/>
             	   </div>
             	</div>
-            	<a href="#">Forgot Password?</a>
+            	
             	<input type="submit" class="btn" value="Login"/>
-				<a href="/index.html" class="newto">Already a user ?</a>
+                <Link  to="/login" class="newto">Already a user ?</Link>
+
             </form>
         </div>
     </div>
